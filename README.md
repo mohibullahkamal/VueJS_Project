@@ -1,8 +1,8 @@
 # VueJS_Project
-#### [Click To View DEMO](https://mohibullahkamal.github.io/VueJS_Project/)
+_[Click To View DEMO](https://mohibullahkamal.github.io/VueJS_Project/)_
+********************
 
-
-Project built using:
+#### Project built using:
 * VueJS for Frontend, 
 * Managing State using Vuex, 
 * SPA with Routing, 
