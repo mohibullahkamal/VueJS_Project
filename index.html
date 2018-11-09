@@ -15,11 +15,11 @@
 </div>
 <script>
 	new Vue({
-	el: '#app',
+	el: '#app',   // Vue reserved word; used to reference like as in .css file
   data: {
-  	title: 'Hello World!'
+  	title: 'Hello World!'   // Prints string
   },
-  methods: {
+  methods: {   // Vue reserved word for method calls
   	changeTitle: function(event) {
     	this.title = event.target.value;
     }
