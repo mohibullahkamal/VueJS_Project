@@ -8,23 +8,36 @@
 	<link rel="stylesheet" href="">
 	<script src="vue.js"></script>
 </head>
+
 <body>
+
 <div id="app">
-  <input type="text" v-on:input="changeTitle">
+  <!-- "v-on:input" lets us create easy input box -->
+  <input type="text" v-on:input="changeTitle">   
   <p>{{ title }}</p>
+  
+  <!-- "v-bind" used to run commands within <> tags -->
+  <p>{{ sayHello() }} - <a v-bind:href="link">Go to Google</a></p>
 </div>
+
+
 <script>
 	new Vue({
 	el: '#app',   // Vue reserved word; used to reference like as in .css file
   data: {
-  	title: 'Hello World!'   // Prints string
+  	title: 'Hello World!',   // Prints string
+    link: 'https:google.com'   // link to google search
   },
   methods: {   // Vue reserved word for method calls
   	changeTitle: function(event) {
     	this.title = event.target.value;
+    },
+    sayHello: function() {   // Returns "title"
+        return this.title;
     }
   }
 });
 </script>
+
 </body>
 </html>
