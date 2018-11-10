@@ -25,7 +25,8 @@
 	new Vue({
 	el: '#app',   // Vue reserved word; used to reference like as in .css file
   data: {
-  	title: 'Hello World!',   // Prints string
+  	title: 'Hello World!',
+    hi: 'HI THERE...',   // Prints string
     link: 'https:google.com'   // link to google search
   },
   methods: {   // Vue reserved word for method calls
@@ -33,7 +34,7 @@
     	this.title = event.target.value;
     },
     sayHello: function() {   // Returns "title"
-        return this.title;
+        return this.hi;
     }
   }
 });
